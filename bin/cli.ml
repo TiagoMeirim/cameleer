@@ -49,7 +49,7 @@ let execute_ide fname path debug =
   Sys.command (sprintf "why3 ide %s %s %s" fname path debug)
 
 let execute_extract fname =
-  Sys.command (sprintf "why3 extract -D ocaml64 %s" fname)
+  Sys.command (sprintf "why3 extract -D cakeml %s" fname)
 
 let execute_batch fname path debug prover =
   Sys.command
